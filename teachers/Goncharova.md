@@ -1,7 +1,7 @@
 ﻿
 # Гончарова Светлана Викторовна
  
-![Gonchyarova](https://goo.gl/iTTjdo)
+![Gonchyarova]("https://ict.herzen.spb.ru/wp-content/uploads/2014/02/goncharova.jpg)
 
 **Дата рождения:** 07 июня  
 
