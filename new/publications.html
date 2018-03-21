@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+    <title>Публикации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Rihan_Zer0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link rel="icon" href="images/herzen-icon.png">
+	
+	<style>
+		#return-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: rgba(0, 0, 0, 0.7);
+			width: 50px;
+			height: 50px;
+			-webkit-border-radius: 35px;
+			-moz-border-radius: 35px;
+			border-radius: 35px;
+			display: none;
+		}
+		
+		#return-to-top img {
+			height : 20px;
+			margin-left: 0px;
+			position: relative;
+			left: 15px;
+			top: 10px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		
+		#return-to-top:hover {
+			background: rgba(0, 0, 0, 0.9);
+		}
+		
+		#return-to-top:hover img {
+			top: 3px;
+		}
+
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+		nav{
+            background-color: #353335;
+            align-items:center;
+		}
+		body {
+		  background:#f5f4f7;
+		  margin-bottom: 268px;
+		}
+		.footer {
+		  padding-top: 15px;
+		  position: absolute;
+		  bottom: 0;
+		  color:#3f3f40;
+		  background-color: #353335;
+		}
+
+		@media (max-width: 991px)  {  
+		   .pr-m-header {
+			padding : 5px;
+			margin-bottom : -7px;
+		   }
+		  }
+		
+		.dropdown:hover>.dropdown-menu {
+		  display: block;
+		  margin-top: 0;
+		}
+		
+		.dropdown-item:hover {
+			background-color: #1CB7CE;
+			color: white;
+		}
+
+		.spiritual-background {
+		  background: url(images/head.jpeg) fixed;
+		  background-size: cover;
+		  background-position: 83% 100%;
+		  height:51vh;
+		  }
+		  
+		@media (max-width: 1199px) {
+			.spiritual-background {
+				height:38vh;
+				background-position: 80% 0%;
+			}
+		}
+		
+		.special-card {
+		  background-color: rgba(245, 245, 245, .0);
+		  font-family: 'Montserrat', sans-serif;
+		}
+		
+		.img-logo {
+		  width: 120px
+		}
+		
+		.img-scr {
+		width: 90%
+		}
+			
+		.img-pic {
+		  width: 225px
+		}
+		
+		.img-icon {
+ 		  width: 40px
+		}
+		
+		.border-3 {
+		  border-width:3px !important;
+		}
+		
+		.golden-str {
+			color: #c0ad79 !important;
+		}
+		
+		@media (min-width: 650px)  {		
+			.pr-m-header {
+				padding : 5px;
+				margin-bottom : -1px;
+			}
+			
+		
+			.footer .media {
+				transition-property: transform;
+				transition-duration : 0.2s;
+				transition-timing-function : ease-in;
+
+			}
+
+			.footer .media:hover {
+				transform : scale(1.1);
+						
+			}	
+			
+			.footer a:hover {
+				text-decoration : none;
+				outline : none;	
+			}
+		}
+		
+	</style> 
+	
+	</head>
+	
+	
+	<body>
+		
+		<header>
+		<div class="container-fluid spiritual-background d-none d-md-block">
+			<div class="row">
+			  <div class="col-5">
+			  <div class="card border-0 special-card">
+				<div class="card-body">
+					<div class="media">
+						<a class="media-left waves-light d-none d-md-block">
+                            <img class="rounded-circle img-logo pr-3" src="images/herzen-logo-small-orig.png" alt="Test">
+                        </a>
+                        <div class="media-body d-none d-xl-block">
+                            <h3 class="media-heading card-title">Герценовский университет</h3>
+                            <h6 class="card-subtitle my-3">Российский Государственный Педагогический <br> Университет им. А. И. Герцена</h6>
+							<hr class="bg-dark">
+							<p class="card-text h3 mt-4" style="color : white; text-shadow : 2px 2px 3px black;"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Кафедра компьютерных технологий <br> и электронного обучения</strong></p>							
+                        </div>
+                    </div>
+		  	    </div>
+			  </div>
+			  </div>
+			</div>
+		</div>
+
+		</header>
+		
+		<nav class="navbar sticky-top navbar-expand-xl navbar-dark">
+			<!-- Кнопка вверх! -->	<a href="javascript:" id="return-to-top"><img src="images/arrow.svg"></a>	<!-- Кнопка вверх! -->
+		  <a class="navbar-brand d-none d-md-block d-xl-none golden-str">Кафедра компьютерных технологий и электронного обучения</a>
+		  <a class="navbar-brand d-md-none text-light">
+			<img src="images/herzen-icon.png" width="33" height="33" class="d-inline-block align-top" alt="">
+			КТиЭО
+		  </a>
+		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse justify-content-md-center" id="mainNavBar">
+			<ul class="navbar-nav">
+			  <li class="nav-item mx-4">
+				<a class="nav-link" href="index.html">Главная</a>
+			  </li>
+			  <li class="nav-item mx-4">
+				<a class="nav-link" href="enrollee.html">Абитуриенту</a>
+			  </li>
+			  <li class="nav-item dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownC" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кафедра</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownC">
+				  <a class="dropdown-item" href="AboutUs.html">О кафедре</a>
+				  <a class="dropdown-item" href="head.html">Завкафедрой</a>
+				  <a class="dropdown-item" href="employees.html">Сотрудники</a>
+				  <a class="dropdown-item" href="#">Выпускники</a>
+				  <a class="dropdown-item" href="#">Наши разработки</a>
+				  <a class="dropdown-item" href="#">Документы</a>
+				</div>
+			  </li>
+			  <li class="nav-item dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Учебная деятельность</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownD">
+				  <a class="dropdown-item" href="educational_program.html">Образовательная программа</a>
+				  <a class="dropdown-item" href="e-learning.html">Электронное обучение</a>
+				  <a class="dropdown-item" href="digital_library.html">Электронная библиотека</a>
+				  <a class="dropdown-item" href="practice.html">Практика</a>
+				  <a class="dropdown-item" href="VKR.html">ВКР</a>
+				</div>
+			  </li>
+			  <li class="nav-item dropdown active mx-4">
+				<a class="nav-link dropdown-toggle golden-str" href="#" id="dropdownS" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Наука<span class="sr-only">(current)</span></a>
+				<div class="dropdown-menu" aria-labelledby="dropdownS">
+				  <a class="dropdown-item" href="#">НИР студентов</a>
+				  <a class="dropdown-item" href="#">Проекты</a>
+				  <a class="dropdown-item" href="#">Конференции</a>
+				  <a class="dropdown-item active" href="publications.html">Публикации<span class="sr-only">(current)</span></a>
+				</div>
+			  </li>
+			  <li class="nav-item mx-4">
+				<a class="nav-link" href="#">События</a>
+			  </li>
+			  <li class="nav-item mx-4">
+				<a class="nav-link" href="#">Медиазал</a>
+			  </li>
+			  <li class="nav-item mx-4">
+				<a class="nav-link" href="#">Партнёры</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>  
+		
+		<main role="main" class="container" style="padding-bottom:20px">
+		<br><p class="d-none d-md-block"><br></p>
+			<div class="row">
+				<div class="col offset-0">
+					<ul class="pagination justify-content-end">
+						<li class="page-item"><a class="page-link" data-toggle="collapse" href="#Bak1" role="button" aria-expanded="true" aria-controls="Bak1">1</a></li>
+						<li class="page-item"><a class="page-link" data-toggle="collapse" href="#Mag1" role="button" aria-expanded="false" aria-controls="Mag1">2</a></li>
+					</ul>
+
+					
+					
+					<div class="collapse show multi-collapse" id="Bak1">
+						<div class="card card-body">
+							<ul class="list-unstyled">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block d-none d-lg-block" href="https://ict.herzen.spb.ru/docs/books/%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA_%D0%BA%D0%BE%D0%BD%D1%842014.docx"><img class="mr-3 img-pic" src="https://ict.herzen.spb.ru/images/science/sbornik.png" alt="Электронное обучение в ВУЗе и в школе"></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" href="https://ict.herzen.spb.ru/docs/books/%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA_%D0%BA%D0%BE%D0%BD%D1%842014.docx"><div class="d-lg-none text-center"><img class="img-pic" src="https://ict.herzen.spb.ru/images/science/sbornik.png" alt="Электронное обучение в ВУЗе и в школе"></div><strong>Электронное обучение в ВУЗе и в школе</strong></a><br>
+									<a class="h6">Материалы сетевой международной научно-практической конференции.- СПб: Астерион, 2014. – 303с.<br>Научные редакторы:<br>Власова Е.З., д.п.н., профессор,<br>Авксентьева Е.Ю., к.п.н.</a><br><br>
+									В сборник материалов сетевой международной научно-практической конференции включены статьи преподавателей, аспирантов, магистрантов. Материалы сборника предназначены для научных сотрудников, преподавателей различных образовательных учреждений, докторантов, аспирантов, магистрантов.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://e.lanbook.com/books/element.php?pl1_id=5594"><img class="mr-3 img-pic" src="https://ict.herzen.spb.ru/images/science/coll_1.jpg" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://e.lanbook.com/books/element.php?pl1_id=5594"><div class="d-lg-none text-center"><img class="img-pic" src="https://ict.herzen.spb.ru/images/science/coll_1.jpg" alt="..."></div><strong>Профильные программы подготовки учителя: особенности проектирования в условиях действия ФГОС ВПО</strong></a><br>
+									<a class="h6">Cостояние, проблемы, перспективы: Учебно-методическое пособие<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, И.В.Гладкой. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2010. — 183 с. </a><br><br>
+									В пособии представлены основные направления совершенствования профильных программ подготовки учителя в условиях проектирования стандартов нового поколения. Работа предназначена для преподавателей системы высшего образования, студентов и всех заинтересованных лиц.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=20115357"><img class="mr-3 img-pic" src="https://ict.herzen.spb.ru/images/science/coll_4.jpg" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=20115357"><div class="d-lg-none text-center"><img class="img-pic" src="https://ict.herzen.spb.ru/images/science/coll_4.jpg" alt="..."></div><strong>Разработка программ подготовки профессорско-преподавательского состава к проектированию образовательного процесса в контексте компетентностного подхода</strong></a><br>
+									<a class="h6">Монография<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, А.В.Тряпицына. — СПБ.<br>Издательство РГПУ им. А.И.Герцена, 2010. — 243 с.</a><br><br>
+									Монография адресована преподавателям вузов, реализующим компетентностный подход в построении образовательного процесса. Монография содержит общую характеристику компетентностного подхода в высшем образовании, современные требования, предъявляемые к программам повышения квалификации, пакет программ повышения квалификации профессорско-преподавательского состава и методические рекомендации к его использованию.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://window.edu.ru/resource/278/64278/files/umk31.pdf"><img class="mr-3 img-pic" src="https://ict.herzen.spb.ru/images/science/coll_9.jpg" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://window.edu.ru/resource/278/64278/files/umk31.pdf"><div class="d-lg-none text-center"><img class="img-pic" src="https://ict.herzen.spb.ru/images/science/coll_9.jpg" alt="..."></div><strong>Технологии взаимодействия человека с высокотехнологичной информационной средой</strong></a><br>
+									<a class="h6"> Учебно-методический комплекс<br>Под ред. В.П.Соломина, Е.З.Власовой. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2008. — 219 с.</a><br><br>
+									В учебно-методический комплекс включены инновационные авторские материалы, основанные на личных разработках преподавателей РГПУ им. А.И.Герцена и предназначенные для решения профессиональных задач высшего педагогического образования в условиях высокотехнологичной информационной среды. Материалы могут быть использованы как студентами, так и преподавателями педагогических вузов.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="https://elibrary.ru/item.asp?id=21063933"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="https://elibrary.ru/item.asp?id=21063933"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Уровневая подготовка педагогических кадров в условиях ФГОС ВПО</strong></a><br>
+									<a class="h6">Результаты исследований 2011 года<br>(Сборник статей по материалам внутривузовской научной конференции, 16 марта 2012 года). — СПб.<br>Издательство «Лема», 2012. — 330 с.</a><br><br>
+									В сборнике статей отражены результаты исследований 2011 года, проведённых сотрудниками НИИ непрерывного педагогического образования и учёными разных кафедр, объединённых в рамках научного направления «Интегративная открытая развивающаяся система непрерывного педагогического образования» (научный руководитель — академик РАО, д-р физ.-мат. наук, проф. Г.А.Бордовский, исполнительный директор — д-р пед. наук, профессор Н.Ф.Радионова).
+								  </p> 
+								</div>
+							  </li><hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21172456%22"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21172456%22"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Учебно-методическое обеспечение профильных программ подготовки учителя на базе бакалавриата в условиях действия ФГОС ВПО</strong></a><br>
+									<a class="h6">Под ред. Г.А.Бордовского, Н.Ф.Радионовой, И.В.Гладкой. — СПб.<br>Издательство «Лема», 2011. — 297 с.</a><br><br>
+									В пособии представлено учебно-методическое обеспечение профильных программ подготовки учителя, разработанное в условиях действия ФГОС ВПО. Материалы учебно-методического пособия разработаны по следующим направлениям — «Педагогическое образование» и «Специальное (дефектологическое) образование». Учебно-методическое пособие предназначено для преподавателей системы высшего профессионального образования, учебно-методического персонала, студентов бакалавриата.
+								  </p> 
+								</div>
+							  </li><hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21058435"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21058435"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Исследование процессов профессионального становления студентов магистратур в современном вузе</strong></a><br>
+									<a class="h6">Коллективная монография<br>Под ред. Н.Ф.Радионовой, А.В.Тряпицына. — СПб.<br>Издательство «Лема», 2013. — 210 с.</a><br><br>
+									В монографии представлены материалы по проблеме становления студентов магистратуры в современном вузе, которые характеризуют позитивные отечественные и зарубежные практики по осуществлению процессов профессионального становления студентов магистратуры в современном вузе. В работе дано обоснование понятия «позитивная практика», представлены методы её выявления, охарактеризованы основные направления взаимодействия отечественного и зарубежного опыта подготовки магистрантов в условиях интернационализации образования. Особое внимание уделено в монографии систематизации особенностей развития опыта магистерского образования: специфика построения образовательных программ магистратуры в логике компетентностного подхода, ведущие образовательные технологии и организации научно-исследовательской практики магистрантов, способствующие развитию профессиональной компетентности магистрантов; проектирование методик диагностики профессиональной компетентности магистрантов. Монография адресована преподавателям вузов, а также исследователям проблем развития высшего профессионального образования.
+								  </p> 
+								</div>
+							  </li><hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21002211"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21002211"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Научно-исследовательская деятельность как фактор профессионального становления студентов магистратуры в условиях инновационного развития образования</strong></a><br>
+									<a class="h6">Монография<br>Под ред. В.П.Соломина, Е.В.Пискуновой. — СПб.<br>Издательство «Лема», 2013. — 174 с.</a><br><br>
+									В монографии представлены результаты исследования особенностей научно-исследовательской деятельности как фактора профессионального становления студентов магистратуры в условиях инновационного развития образования. В публикации дана характеристика научно-исследовательской деятельности студентов магистратуры как основы магистерского образования и исследовательской компетентности как результата освоения магистерских образовательных программ, представлен зарубежный и отечественный опыт организации научно-исследовательской деятельности студентов магистратуры. Монография может быть полезна исследователям проблем профессионального образования, преподавателям и сотрудникам образовательных учреждений, осуществляющих подготовку педагогов.
+								  </p> 
+								</div>
+							  </li><hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21058433"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21058433"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Исследование принципов, способов и форм оценки качества подготовки бакалавров и магистров в условиях современного вуза: лучшие отечественные и зарубежные практики</strong></a><br>
+									<a class="h6">Монография<br>Под ред. Н.Ф.Радионовой, А.Г.Гогоберидзе. — СПб.<br>Издательство «Лема», 2013. — 186 с.</a><br><br>
+									Монография отражает результаты этапа работы по проекту «Исследование принципов, способов и форм оценки качества подготовки бакалавров и магистров в условиях современного вуза». В публикации рассмотрена оценка качества подготовки бакалавров и магистров как элемент системы современного высшего профессионального образования, охарактеризованы лучшие отечественные и зарубежные практики оценки качества подготовки бакалавров и магистров. Монография может быть полезна исследователям проблем оценки качества подготовки, преподавателям и сотрудникам образовательных учреждений, осуществляющих подготовку педагогов.
+								  </p> 
+								</div>
+							  </li><hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21172456"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21172456"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Профильные программы подготовки учителя: особенности проектирования в условиях действия ФГОС ВПО</strong></a><br>
+									<a class="h6">Учебно-методическое пособие для преподавателей высшей школы<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, И.В.Гладкой. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2011. — 222 с.</a><br><br>
+									В учебно-методическом пособии представлены материалы профильных программ, способствующие проектированию программ по педагогическому и специальному (дефектологическому) образованию в условиях стандартов ФГОС ВПО. Содержание материалов позволяет получить ответы на вопросы: что такое профильная программа, какова её структура, как спроектировать элементы профильной программы, от чего зависит содержание профильных программ. Пособие предназначено для преподавателей системы высшего образования и системы повышения квалификации профессорско-преподавательского состава. Учебно-методическое пособие отражает результаты работы по проекту «Совершенствование профильных программ подготовки учителя в условиях действия ФГОС ВПО» в рамках аналитической ведомственной целевой программы «Развитие научного потенциала высшей школы (2009-2011 годы)».
+								  </p> 
+								</div>
+							  </li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="collapse multi-collapse" id="Mag1">
+						<div class="card card-body">
+							<ul class="list-unstyled">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21410263"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21410263"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Оценка профессиональной компетентности бакалавров и магистров образования</strong></a><br>
+									<a class="h6">Методические рекомендации<br>Под ред. А.П.Тряпицыной. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2008. — 183 с.</a><br><br>
+									В методических рекомендациях представлены методики оценки профессиональной компетентности бакалавров и магистров образования в контексте гуманитарных технологий, которые проявляются в направленности на студента, предоставлении обучаемым возможности выбора и реализации индивидуального образовательного маршрута, ориентации на успех, гуманитаризации образования. Адресованы профессорско-преподавательскому составу вузов.
+								  </p>
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=20066153"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=20066153"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Информационная образовательная среда университета</strong></a><br>
+									<a class="h6">Под ред. В.П.Соломина. — СПб.<br>Академия Исследования Культуры, 2008. — 92 с.</a><br><br>
+									В учебно-методическом пособии рассматриваются теоретические и практические вопросы создания информационной образовательной среды университета (структура и компоненты). Рассмотрена её программно-аппаратная организация и информационно-методическое обеспечение. Описана организационно-педагогическая деятельность педагогического коллектива в информационной образовательной среде университета. Издание, разработанное в рамках реализации инновационной образовательной программы РГПУ им. А.И.Герцена, может быть интересно руководителям и научно-педагогическим работникам вузов, занимающимся проблемами информатизации университетского образовательного пространства.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=20112994"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=20112994"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Совершенствование образовательных программ и технологий подготовки специалистов для инновационной деятельности в сфере образования</strong></a><br>
+									<a class="h6">Коллективная монография<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, Е.В.Пискуновой. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2009. — 309 с.</a><br><br>
+									В монографии представлены результаты первого этапа исследования по проекту «Совершенствование образовательных программ и технологий подготовки специалистов для инновационной деятельности в сфере образования» (научный руководитель — академик Г.А.Бордовский). В работе раскрыты результаты анализа нормативных документов, отражающих инновационное развитие в социальной сфере, результаты анализа отечественного и зарубежного опыта инновационного развития образования; охарактеризованы направления обновление образовательных и учебных программ, педагогических технологий и образовательной среды учреждений, реализующих бакалаврские и магистерские программы подготовки специалистов для сферы образования. Монография может быть полезна исследователям проблем профессионального образования, преподавателям и сотрудникам образовательных учреждений, осуществляющим подготовку педагогов.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=22036589"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=22036589"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Разработка пакета программ повышения квалификации профессорско-преподавательского состава в области проектирования и реализации учебно-методического обеспечения подготовки прикладных бакалавров</strong></a><br>
+									<a class="h6">Учебно-методическое пособие<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, А.Г.Гогоберидзе. — СПб.<br>Издательство «Лема», 2011. — 225 с.</a><br><br>
+									Учебно-методическое пособие отражает результаты очередного этапа работы по проекту «Разработка учебно-методического обеспечения подготовки прикладных бакалавров на базе образовательных учреждений высшего профессионального образования» в рамках аналитической ведомственной целевой программы «Развитие научного потенциала высшей школы (2009-2011 годы)». Материалы пособия обращены к преподавателям системы педагогического образования.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=22788259"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=22788259"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Разработка учебно-методического обеспечения подготовки прикладных бакалавров на базе образовательных учреждений высшего профессионального образования: анализ и проблемы</strong></a><br>
+									<a class="h6">Научно-методическое пособие<br>Под ред. Г.А.Бордовского, Н.Ф.Радионовой, А.Г.Гогоберидзе. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2010. — 322 с.</a><br><br>
+									Научно-методическое пособие отражает результаты работы по проекту «Разработка учебно-методического обеспечения подготовки прикладных бакалавров на базе образовательных учреждений высшего профессионального образования» в рамках аналитической ведомственной целевой программы «Развитие научного потенциала высшей школы (2009-2010 годы)».
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=20108194"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=20108194"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Электронное обучение и управление знаниями</strong></a><br>
+									<a class="h6">Сборник научных статей (Выпуск № 2(11))<br>Под ред. В.И.Воробьёв. — СПб.<br>Издательство РГПУ им. А.И.Герцена, 2000. — 102 с.</a><br><br>
+									В сборник включены статьи преподавателей и аспирантов РГПУ им. А.И.Герцена, преподавателей колледжей, школ, магистрантов и студентов. Материалы сборника предназначены для научных сотрудников, преподавателей различных образовательных учреждений, докторантов, аспирантов, магистрантов.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href=""><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href=""><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Власова Е.З., Ильина Т.Ю., Копыльцов А.В. — HTML в примерах</strong></a><br>
+									<a class="h6">Учебное пособие<br>Под ред. Е.З.Власовой. — СПб.<br>Астерион, 2011. — 84 с.</a><br><br>
+									В учебном пособии изложены основные сведения о возможностях и принципах работы в INTERnet, дан сравнительный анализ информационно-поисковых систем, приведён обширный список полезных для учащихся адресов в INTERnet. На конкретных примерах изложены принципы создания HTML-документов. Каждый пример сопровождается списком использованных команд языка HTML с подробными комментариями.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href="http://elibrary.ru/item.asp?id=21148131"><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href="http://elibrary.ru/item.asp?id=21148131"><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Современные информационные технологии в образовании</strong></a><br>
+									<a class="h6">Материалы учебно-методического семинара слушателей курсов программы Intel® «Обучение для будущего»<br>Научный руководитель В.П.Соломин. — СПб.: 2003.</a><br><br>
+									 В сборник включены работы, выполненные слушателями центра компьютерных технологий РГПУ им. А.И.Герцена в рамках обучения по программе Intel® «Обучение для будущего». Он также содержит статьи руководителей и преподавателей центров, реализующих эту программу. Материалы сборника могут быть полезны студентам педагогических вузов, учителям-предметникам общеобразовательных школ, педагогической общественности. Тексты учебно-методических пакетов приведены в авторском варианте.
+								  </p> 
+								</div>
+							  </li>
+							  <hr class="bg-light">
+							  <li class="media">
+								<a class="align-self-center d-none d-lg-block" target="_blank" href=""><img class="mr-3 img-pic" src="images/book.png" alt="..."></a>
+								<div class="media-body">
+								  <p class="mt-0 mb-1">
+									<a class="h5" target="_blank" href=""><div class="d-lg-none text-center"><img class="img-pic" src="images/book.png" alt="..."></div><strong>Информационные и коммуникационные технологии в образовании</strong></a><br>
+									<a class="h6">Межвузовский сборник научных трудов (Выпуск 2). — СПб.<br>Издательство БАН, 2003. — 191 с.</a><br><br>
+									В сборнике представлены результаты теоретических и экспериментальных исследований по использованию информационных и коммуникационных технологий в вузовском и школьном образовании. Рассмотрены актуальные вопросы информационно-технологической подготовки студентов и школьников, формирование их информационной компетентности, развития информационно-образовательной среды на основе современных информационных технологий и средств связи. Сборник издаётся ежегодно с 2002 года. Предназначен преподавателям и студентам педагогических вузов, а также широкому кругу исследователей и специалистов, интересующихся вопросами использования информационных и коммуникационных технологий в образовании.
+								  </p> 
+								</div>
+							  </li>
+						</div>
+					</div><br>
+					<ul class="pagination justify-content-end">
+						<li class="page-item"><a class="page-link" data-toggle="collapse" href="#Bak1" role="button" aria-expanded="true" aria-controls="Bak1">1</a></li>
+						<li class="page-item"><a class="page-link" data-toggle="collapse" href="#Mag1" role="button" aria-expanded="false" aria-controls="Mag1">2</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-3 d-none d-md-block" style="z-index:900"><div class="container sticky-top"><br><br> <!-- навигационное меню для компов  -->
+					<ul class="w3-ul w3-small">
+						<li class="my-3"><a class="h6" href="research_work.html">НИР студентов</a></li>
+						<li class="my-3"><a class="h6" href="projects.html">Проекты</a></li>
+						<li class="my-3"><a class="h6" href="conferences.html">Конференции</a></li>
+						<li class="my-3 text-primary"><a class="h6">Публикации</a></li>
+					</ul></div>
+				</div>						
+			</div>
+			<p class="d-none d-md-block"><br></p>
+		
+			<div class="row d-md-none"> <!-- навигационное меню для телефонов  -->
+				<div class="col offset-5">
+					<br><h5 class="text-info">Наука:</h5>
+					<ul class="w3-ul w3-small">
+						<li class="my-3"><a class="h6" href="research_work.html">НИР студентов</a></li>
+						<li class="my-3"><a class="h6" href="projects.html">Проекты</a></li>
+						<li class="my-3"><a class="h6" href="conferences.html">Конференции</a></li>
+						<li class="my-3 text-primary"><a class="h6">Публикации</a></li>
+					</ul><br>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer container-fluid">
+			<div class="row">
+				<div class="container">
+					<p class="h4 mb-3" style="color:#c7c7c7">Контакты</p>
+					<div class="media my-2">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<p class="text-light m-2">+7 (812) 643-77-67</p>
+						</div>
+					</div>
+					<div class="media my-2">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="mailto:ctel-herzen@yandex.ru">
+							<p class="text-light m-2">ctel-herzen@yandex.ru</p></a>
+						</div>
+					</div>
+					<div class="media my-2">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/location.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
+							<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
+						</div>
+					</div>
+					<hr style="background-color: #c0ad79">
+					<p class="text-right"><a class="golden-str" href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 75) {
+				$('#return-to-top').fadeIn(200);
+			} else {
+				$('#return-to-top').fadeOut(200);
+			}
+		});
+		$('#return-to-top').click(function() {
+			$('body,html').animate({
+				scrollTop : 0
+			}, 500);
+		});
+		$(document).ready(function(){
+			$(".page-link").click(function(){
+				$(".multi-collapse").collapse('hide');
+			});
+		});
+		</script>
+	</body>
+</html>
